@@ -1,0 +1,24 @@
+[package]
+name = "binance_bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# 1.
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+# 2. 
+teloxide = { version = "0.10", features = ["macros", "auto-send"] }
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+binance = { git = "https://github.com/wisespace-io/binance-rs.git" }
+
+env_logger = "0.9.0"
+regex = "1.6.0"
+tldextract = "0.5.1"
+
+url = "2.2.2"
